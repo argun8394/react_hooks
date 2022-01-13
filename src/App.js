@@ -9,8 +9,9 @@ const [isVisible,setVisible] =useState(true);
 
   return (
     <div className="App">
+      <button onClick={() =>setVisible(!isVisible)}>Visibility</button>
     
-    <FunctionalComponent/>
+    {isVisible ? <FunctionalComponent/> : null}
     </div>
   );
 }
